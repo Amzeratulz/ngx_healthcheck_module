@@ -309,5 +309,5 @@
 +    ngx_uint_t                      check_index;
 +#endif
  
- #if (NGX_STREAM_UPSTREAM_LEAST_TIME || NGX_COMPAT)
-     ngx_msec_t                       connect_time;
+     NGX_COMPAT_BEGIN(14)
+     NGX_COMPAT_END
