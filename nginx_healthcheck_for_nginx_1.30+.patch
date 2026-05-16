@@ -293,8 +293,8 @@ index 6e8360440..89eb7d5c2 100644
 +#if (NGX_STREAM_UPSTREAM_CHECK)
 +#include "ngx_stream_upstream_check_module.h"
 +#endif
-
-
+ 
+ 
  static ngx_int_t ngx_stream_upstream_init_least_conn_peer(
      ngx_stream_session_t *s, ngx_stream_upstream_srv_conf_t *us);
 @@ -150,6 +152,14 @@ ngx_stream_upstream_get_least_conn_peer(ngx_peer_connection_t *pc, void *data)
