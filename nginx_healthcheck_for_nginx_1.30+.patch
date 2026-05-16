@@ -238,10 +238,11 @@ diff --git a/src/stream/ngx_stream_upstream_hash_module.c b/src/stream/ngx_strea
 index 20fca6c0d..85c358181 100644
 --- a/src/stream/ngx_stream_upstream_hash_module.c
 +++ b/src/stream/ngx_stream_upstream_hash_module.c
-@@ -8,7 +8,10 @@
+@@ -8,8 +8,10 @@
  #include <ngx_config.h>
  #include <ngx_core.h>
  #include <ngx_stream.h>
+-
 +#if (NGX_STREAM_UPSTREAM_CHECK)
 +#include "ngx_stream_upstream_check_module.h"
 +#endif
@@ -286,7 +287,7 @@ diff --git a/src/stream/ngx_stream_upstream_least_conn_module.c b/src/stream/ngx
 index 6e8360440..89eb7d5c2 100644
 --- a/src/stream/ngx_stream_upstream_least_conn_module.c
 +++ b/src/stream/ngx_stream_upstream_least_conn_module.c
-@@ -8,7 +8,10 @@
+@@ -8,8 +8,10 @@
  #include <ngx_config.h>
  #include <ngx_core.h>
  #include <ngx_stream.h>
@@ -331,7 +332,7 @@ diff --git a/src/stream/ngx_stream_upstream_round_robin.c b/src/stream/ngx_strea
 index 5b5f20db7..58dff55fb 100644
 --- a/src/stream/ngx_stream_upstream_round_robin.c
 +++ b/src/stream/ngx_stream_upstream_round_robin.c
-@@ -8,7 +8,10 @@
+@@ -8,8 +8,10 @@
  #include <ngx_config.h>
  #include <ngx_core.h>
  #include <ngx_stream.h>
@@ -435,7 +436,7 @@ index c168bfe80..40e38c084 100644
 --- a/src/stream/ngx_stream_upstream_round_robin.h
 +++ b/src/stream/ngx_stream_upstream_round_robin.h
 @@ -73,5 +73,9 @@ struct ngx_stream_upstream_rr_peer_s {
- #endif
+ 
      ngx_stream_upstream_rr_peer_t  *next;
  
 +#if (NGX_STREAM_UPSTREAM_CHECK)
