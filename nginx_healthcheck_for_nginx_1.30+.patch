@@ -434,7 +434,7 @@ diff --git a/src/stream/ngx_stream_upstream_round_robin.h b/src/stream/ngx_strea
 index c168bfe80..40e38c084 100644
 --- a/src/stream/ngx_stream_upstream_round_robin.h
 +++ b/src/stream/ngx_stream_upstream_round_robin.h
-@@ -69,5 +69,9 @@ struct ngx_stream_upstream_rr_peer_s {
+@@ -73,5 +73,9 @@ struct ngx_stream_upstream_rr_peer_s {
  #endif
      ngx_stream_upstream_rr_peer_t  *next;
  
