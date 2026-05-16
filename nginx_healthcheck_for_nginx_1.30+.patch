@@ -286,7 +286,7 @@ diff --git a/src/stream/ngx_stream_upstream_least_conn_module.c b/src/stream/ngx
 index 6e8360440..89eb7d5c2 100644
 --- a/src/stream/ngx_stream_upstream_least_conn_module.c
 +++ b/src/stream/ngx_stream_upstream_least_conn_module.c
-@@ -8,8 +8,10 @@
+@@ -8,7 +8,10 @@
  #include <ngx_config.h>
  #include <ngx_core.h>
  #include <ngx_stream.h>
